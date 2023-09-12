@@ -37,9 +37,9 @@ public void open()
 	{
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
-		option.addArguments("headless");
+		option.addArguments("hesdless");
 		option.addArguments("window-size=1980,1080");
-		driver=new ChromeDriver();
+		driver=new ChromeDriver(option);
 	}
 	else if(System.getProperty("browser").equalsIgnoreCase("edge"))
 	{
@@ -47,7 +47,7 @@ public void open()
 		EdgeOptions option =new EdgeOptions();
 		option.addArguments("headless");
 		option.addArguments("window-size=1980,1080");
-		driver=new EdgeDriver();
+		driver=new EdgeDriver(option);
 	}
 }
 @BeforeMethod
