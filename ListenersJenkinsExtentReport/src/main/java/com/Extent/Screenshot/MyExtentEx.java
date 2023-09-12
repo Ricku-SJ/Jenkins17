@@ -37,7 +37,7 @@ public void open()
 	{
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
-		option.addArguments("hesdless");
+		option.addArguments("headless");
 		option.addArguments("window-size=1980,1080");
 		driver=new ChromeDriver(option);
 	}
